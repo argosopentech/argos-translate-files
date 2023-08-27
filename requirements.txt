@@ -2,3 +2,5 @@ beautifulsoup4>=4.9.3
 lxml>=4.9.2
 argostranslate>=1.5.1
 translatehtml>=1.5.1
+python-pptx>=0.6.21
+python-docx>=0.8.11
