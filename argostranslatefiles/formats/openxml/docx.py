@@ -10,7 +10,6 @@ class Docx(AbstractXml):
 
     def translate_paragraphs(self,paragraphs,underlying_translation):
         for paragraph in paragraphs:
-            sys.stderr.write(f'{paragraph.text}\n')
 
             if len(paragraph.runs) == 1:
                 paragraph.runs[0].text = underlying_translation.translate(paragraph.runs[0].text)
@@ -20,7 +19,6 @@ class Docx(AbstractXml):
                 first_run_style = paragraph.runs[0].style
                 #get the dominant run in the paragraph
                 dominant_run = max(paragraph.runs, key=lambda x: len(x.text))
-                sys.stderr.write(f'dominant run: {dominant_run.text}.\n')
                 dom_font = dominant_run.font.name
                 dom_bold = dominant_run.font.bold
                 dom_italic = dominant_run.font.italic
