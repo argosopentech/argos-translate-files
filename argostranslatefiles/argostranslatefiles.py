@@ -12,12 +12,12 @@ from argostranslatefiles.formats.epub import Epub
 def get_supported_formats():
     return [
         Txt(),
-        #Odt(),
-        #Odp(),
+        Odt(),
+        Odp(),
         Docx(),
         Pptx()
-        #Epub(),
-        #Html()
+        Epub(),
+        Html()
     ]
 
 
