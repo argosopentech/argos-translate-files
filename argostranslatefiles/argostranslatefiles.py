@@ -15,7 +15,7 @@ def get_supported_formats():
         Odt(),
         Odp(),
         Docx(),
-        Pptx()
+        Pptx(),
         Epub(),
         Html()
     ]
